@@ -1,0 +1,18 @@
+.side_bar
+  .side_bar__user--name
+    .side_bar__user--name__box
+      %p.side_bar__box__name 田中
+      %ul.side_bar__user--name__box__menu
+        %li.side_bar__new-group
+          = link_to "#" do
+            = icon('fa','edit')
+        %li.side_bar__edit-user
+          = link_to "#" do
+            = icon('fa','cog')
+  .side_bar__group
+    = link_to "#" do
+      %p.side_bar__group__group-name techcamp
+      %p.side_bar__group__new-message まだメッセージがありません
+    = link_to "#" do
+      %p.side_bar__group__group-name techcamp2
+      %p.side_bar__group__new-message 始まりました

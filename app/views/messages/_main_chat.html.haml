@@ -1,0 +1,35 @@
+.main_chat
+  .main_chat__group-info
+    .main_chat__group-info__left
+      %h2.main_chat__group-info__left__group-title
+        グループ名
+      %ul.main_chat__group-info__left__menber 
+        Menber :
+        %li.main_chat__group-info__left__menber-name  田中
+        
+    .main_chat__group-info__edit-btn
+      = link_to "#" do
+        Edit
+  .main_chat__messages
+    .main_chat__messages__message
+      .main_chat__messages__message__message-list
+        %p.main_chat__messages__message__message-list__talk-user 田中
+        %p.main_chat__messages__message__message-list__talk-date 2020/01/20(Mon) 14:15:06
+      %p.main_chat__messages__message__text お試しチャット
+    .main_chat__messages__message
+      .main_chat__messages__message__message-list
+        %p.main_chat__messages__message__message-list__talk-user 田中
+        %p.main_chat__messages__message__message-list__talk-date 2020/01/20(Mon) 14:15:06
+      %p.main_chat__messages__message__text お試しチャット
+  .main_chat__message-form
+    .form
+      %form.new-message
+        .input-box
+          %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+          %label{class: "input-box__image"}
+            = icon('fas', 'image')
+            %input{type: "file", class: "input-box__image__file"}
+        %input{type: "submit", class: "submit-btn"}
+
+
+    
