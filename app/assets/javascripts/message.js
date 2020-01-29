@@ -60,14 +60,10 @@ $(function(){
         insertHTML += buildHTML(message)
       });
       $('.messages').append(insertHTML);
-      $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
-      $("#new_message")[0].reset();
-      $(".form__submit").prop("disabled", false);
-      console.log('success');
       }
     })
     .fail(function() {
-      console.log('error');
+      alert("自動更新に失敗しました");
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
